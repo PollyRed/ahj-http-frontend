@@ -160,6 +160,11 @@ td {
 }
 
 table {
-	table-layout: fixed;
-	width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td:nth-child(2) {
+	width: 290px;
 }
