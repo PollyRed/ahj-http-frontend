@@ -1,0 +1,165 @@
+body {
+	background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+	background-size: 15px 15px;
+	background-position: center center;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Arial sans-serif;
+	color: #000;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 550px;
+	margin: 30px auto;
+	position: relative;
+}
+
+.btn-container {
+	align-self: flex-end;
+}
+
+.btn-add {
+	padding: 9px 15px;
+	background-color: #fff;
+	text-transform: uppercase;
+	border-radius: 8px;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+}
+
+.btn-add:hover, .btn-submit:hover, .btn-delete:hover {
+	background-color: cornflowerblue;
+	color: #fff;
+}
+
+.products-list {
+	width: 100%;
+	border: 1px solid #000;
+	border-collapse: collapse;
+
+
+}
+
+.products-list tr {
+	border-bottom: 1px solid #000;
+	background-color: #fff;
+}
+
+.products-list tr:hover {
+	background-color: aliceblue;
+}
+
+
+.products-list td {
+	min-width: 25px;
+	box-sizing: border-box;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.ticket-name {
+	cursor: pointer;
+}
+
+
+.ticket-description {
+	margin-top: 20px;
+}
+
+
+.ticket-status {
+	width: 35px;
+	height: 35px;
+}
+
+
+.ticket-move {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.ticket-edit:hover, .ticket-status:hover {
+	color: cornflowerblue;
+}
+
+.ticket-delete:hover {
+	color: crimson;
+}
+
+.modal-container {
+	position: absolute;
+	top: 50px;
+	left: 10%;
+	width: 80%;
+	z-index: 1000;
+
+}
+
+.modal-form, .modal-delete {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px 20px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+.modal-form h2, .modal-delete h2 {
+	margin: 0 0 20px 0;
+	align-self: center;
+	font-weight: 400;
+}
+
+.modal-form label {
+	margin-bottom: 10px;
+}
+
+.modal-form input {
+	margin-bottom: 20px;
+	padding: 8px 5px;
+	box-sizing: border-box;
+}
+
+.modal-form .btn-form-container, .modal-delete .btn-delete-container {
+	align-self: flex-end;
+}
+
+
+
+.btn-form-container button, .btn-delete-container button {
+	padding: 9px 15px;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+
+.btn-reset:hover, .btn-cancel:hover {
+	background-color: crimson;
+	color: #fff;
+}
+
+.hidden {
+	display: none;
+}
+
+.ticket-edit, .ticket-delete {
+	display: inline-block;
+}
+
+td {
+  overflow: hidden;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+}

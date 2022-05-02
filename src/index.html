@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>HelpDesk</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="btn-container">
+        <button class="btn-add" type="button">Добавить тикет</button>
+    </div>
+    <div class="main-container">
+        <table class="products-list"></table>
+    </div>
+
+    <div class="modal-container">
+        <form class="modal-delete hidden">
+            <h2>Удалить тикет</h2>
+            <p>Вы уверены, что хотите удалить тикет? Это действие необратимо.</p>
+            <div class="btn-delete-container">
+                <button class="btn-cancel" type="reset">Отмена</button>
+                <button class="btn-delete" type="submit">Оk</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
